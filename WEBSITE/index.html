@@ -1,0 +1,399 @@
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap" rel="stylesheet">
+	</head>
+		<title>GADGET.COM</title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			body{
+				margin:0 auto;
+				padding:0;
+				background-image:url('BACKGROUND.jpg');
+				background-size:cover;
+				background-attachment:fixed;
+			}
+			#mainarea{
+				margin:0 auto;
+				width:1500px;
+				height:1800px;
+			}
+			#headarea{
+				width:1500px;
+				height:100px;
+				background-color:#150E06;
+			}
+			.headarea-left{
+				width:250px;
+				height:100px;
+				float:left;
+				color:white;
+			}
+			.headarea-left h1{
+				padding: 28px 30px;
+				font-style:italic;
+			}
+			.headarea-mid{
+				width:900px;
+				height:100px;
+				float:left;
+				position:relative;
+			}
+			#search-bar{
+				width:800px;
+				height:90px;
+				position:absolute;
+				left:50px;
+			}
+			.search{
+				width:800px;
+				height:30px;
+				padding:20px 50px;
+				margin:25px 0 0 0;
+				font-style:italic;
+				font-size:20px;
+			}
+			#search-icon{
+				width:50px;
+				height:43px;
+				position:absolute;
+				top:25px;
+				left:850px;
+				color:white;
+				text-align:center;
+				padding:4px 0;
+			}
+			.headarea-right{
+				width:350px;
+				height:100px;
+				float:left;
+			}
+			.headarea-right li{
+				list-style:none;
+				float:left;
+				position:relative;
+				left:20px;
+				top:25px;
+				font-size:50px;
+				padding:0 50px;
+			}
+			.headarea-right li a:visited,
+			.headarea-right li a:link{
+				color:white;
+			}
+			#menuarea{
+				width:1500px;
+				height:40px;
+				background-color:black;
+				float: left;
+				position:sticky;
+				z-index:1000;
+				top:0;
+			}
+			#menuarea li{
+				list-style:none;
+				float:left;
+				padding:10px 45px;
+			}
+			#menuarea li a:link,
+			#menuarea li a:visited{
+				text-decoration:none;
+				color:white;
+				font-weight:bold;
+			}
+			#toparea{
+				width:1500px;
+				height:400px;
+				background-color:#74BAAA;
+			}
+			#slidearea{
+				width:1500px;
+				height:500px ;
+				position:relative;
+				float:left;
+			}
+			.slidearea-new h2{
+				text-align:center;
+				font-style:italic;
+				position:relative;	
+			}
+			.slidearea-new h2{
+				font-family: 'Bitter', serif;
+			}
+			.imagearea-new h3{
+				text-align:center;
+				font-style:italic;
+				position:relative;
+			}
+			.slidearea-new{
+				width:300px;
+				height:300px;
+				position:relative;
+				margin:100px;
+				float:left;
+			}
+			.slidearea-new img, .imagearea-new img{
+				width:100%;
+				height:100%;
+				position:relative;
+			}
+			.slidearea-new:hover img{
+				transform:scale(1.1,1.1);
+				position:relative;
+			}
+			#imagearea{
+				width:1500px;
+				height:500px;
+				position:relative;
+				float:left;
+			}
+			.imagearea-new{
+				width:200px;
+				height:200px;
+				position:relative;
+				margin:150px 87.5px;
+				float:left;
+			}
+			.imagearea-new:hover img{
+				transform:scale(1.1,1.1);
+			}
+			#endarea{
+				width:1500px;
+				height:500px;
+				background-color:#333333;
+				float:left;
+				position:relative;
+			}
+			#endarea-working{
+				width:1300px;
+				height:500px;
+				position:absolute;
+				top:0; 
+				left:100px;
+			}
+			#endarea-working-1{
+				width:1300px;
+				height:99px;
+				float:left;
+			}
+			#endarea-working-1 h1{
+				text-align:center;
+				padding:30px 0;
+				color:white;
+				font-style:italic;
+			}
+			.endarea-working-2-box{
+				width:433.3px;
+				height:350px;
+				position:relative;
+				top:50px;
+				float:left;
+			}
+			.endarea-working-2-box-top{
+				width:430px;
+				height:100px;
+				float:left;
+				position:relative;
+			}
+			.endarea-working-2-box-bottom{
+				width:430px;
+				height:200px;
+				background-position:center;
+				position:relative;
+				float:left;
+				top:50px;
+			}
+			.endarea-working-2-box-bottom-1 li{
+				list-style:none;
+				padding:10px 0;
+			}
+			.endarea-working-2-box-bottom-1 li a:visited,
+			.endarea-working-2-box-bottom-1 li a:link{
+				color:white;
+				font-size:20px;
+			}
+			.c-w-u h1{
+				position:relative;
+				left:65px;
+			}
+			.endarea-working-2-box-bottom-2 li{
+				list-style:none;
+				float:left;
+				text-align:center;
+				position:relative;
+				left:55px;
+				font-size:50px;
+				padding:0 20px;
+			}
+			.endarea-working-2-box-bottom-2 li a:visited,
+			.endarea-working-2-box-bottom-2 li a:link{
+				color:white;
+			}
+			/*
+			.endarea-working-2-box-bottom-2 li:nth-child(4n) a:visited,
+			.endarea-working-2-box-bottom-2 li:nth-child(4n) a:link{
+				color:red;
+			}
+			*/
+			.endarea-working-2-box-bottom-2 li:nth-child(1) a:hover{
+				color:#1DA1F2;
+			}
+			.endarea-working-2-box-bottom-2 li:nth-child(2) a:hover{
+				background: #d6249f;
+    				background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    				-webkit-background-clip: text;
+    				-webkit-text-fill-color: transparent;
+			}
+			.endarea-working-2-box-bottom-2 li:nth-child(3) a:hover{
+				color:#4267B2;
+			}
+			.endarea-working-2-box-bottom-2 li:nth-child(4) a:hover{
+				color:#5BF877;
+			}
+			.endarea-working-2-box-top h1{
+				padding:30px 0;
+				color:white;
+			}
+			.endarea-working-2-box-bottom{
+				width:1300px;
+				height:49px;
+				float:left;
+				text-align:center;
+				color:white;
+				font-size:20px;
+				padding-top:18px;
+			}
+			/*
+			.endarea-working-2-box-bottom-2 ul li:nth-child(4n){
+				color:red;
+			}
+			*/
+		</style>
+	<body>
+		<div id="mainarea">
+			<div id="headarea">
+				<div class="headarea-left">
+					<h1>GADGET.COM</h1>
+				</div>
+				<div class="headarea-mid">
+					<div id="search-bar">
+						<input type="text" placeholder="Search Your Items" class="search">
+					</div>
+					<div id="search-icon">
+						<h1><i class="fa fa-search"></i></h1>
+					</div>
+				</div>
+				<div class="headarea-right">
+					<ul>
+						<li><a href="#"><i class="fa fa-user-circle"></i></a></li>
+						<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>							
+					</ul>
+				</div>
+			</div>
+			<div id="menuarea">
+				<ul>
+					<li><a href="#">MOBILE</a></li>
+					<li><a href="#">LAPTOP</a></li>
+					<li><a href="#">CAMERA</a></li>
+					<li><a href="#">ELECTRONICS</a></li>
+					<li><a href="#">MOBILE ACCESSORIES</a></li>
+					<li><a href="#">COMPUTER ACCESSORIES</a></li>
+					<li><a href="#">HOME APPLIANCES</a></li>
+				</ul>
+			</div>
+			<div id="toparea">
+				<img src="Z.jpg">
+			</div>
+			<div id="slidearea">
+				<div class="slidearea-new">
+					<img src="MOBILE.png">
+					<h2>IPhone 13 Mini</h2>
+					<h2>79,999/-</h2>
+				</div>
+				<div class="slidearea-new">
+					<img src="LAPTOP.png">
+					<h2>HP Pavilion Gaming Laptop</h2>
+					<h2>69,999/-</h2>
+				</div>
+				<div class="slidearea-new">
+					<img src="CAMERA.png">
+					<h2>Canon EOS 90D</h2>
+					<h2>99,999/-</h2>
+				</div>				
+			</div>
+			<div id="imagearea">
+				<div class="imagearea-new">
+					<img src="T.png">
+					<h3>Xiaomi Mi TV</h3>
+				</div>
+				<div class="imagearea-new">
+					<img src="F.png">
+					<h3>Intellifresh 465L 3 Star Refrigerator</h3>
+				</div>
+				<div class="imagearea-new">
+					<img src="A.png">
+					<h3>Voltas 1.5 Ton Split Air Conditioner</h3>
+				</div>
+				<div class="imagearea-new">
+					<img src="W.png">
+					<h3>Samsung WW70T4020CX Washing Machine</h3>
+				</div>
+			</div>
+			<div id="endarea">
+				<div id="endarea-working">
+					<div id="endarea-working-1">
+						<h1>GADGET.COM</h1>
+					</div>
+					<div id="endarea-working-2">
+						<div class="endarea-working-2-box">
+							<div class="endarea-working-2-box-top">
+								<h1>MENU</h1>
+							</div>
+							<div class="endarea-working-2-box-bottom-1">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">My Cart</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="endarea-working-2-box">
+							<div class="endarea-working-2-box-top">
+								<h1>LINKS</h1>
+							</div>
+							<div class="endarea-working-2-box-bottom-1">
+								<ul>
+									<li><a href="#">Register/Login</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Terms & Conditions</a></li>
+									<li><a href="#">Privacy Policy</a></li>									
+								</ul>
+							</div>
+						</div>
+						<div class="endarea-working-2-box">
+							<div class="endarea-working-2-box-top c-w-u">
+								<h1>CONNECT WITH US</h1>
+							</div>
+							<div class="endarea-working-2-box-bottom-2">
+								<ul>
+									<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+									<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>								
+								</ul>
+							</div>
+						</div>
+						<div class="endarea-working-2-box-bottom">
+							<p>Copyright © All Rights Reserved 2022 | Designed by Baisakhi Mallick</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
